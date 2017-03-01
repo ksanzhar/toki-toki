@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		A2DA8D1E1E6720C900E18AAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA8D1D1E6720C900E18AAA /* AppDelegate.swift */; };
-		A2DA8D201E6720C900E18AAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA8D1F1E6720C900E18AAA /* ViewController.swift */; };
+		A2DA8D201E6720C900E18AAA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA8D1F1E6720C900E18AAA /* MainVC.swift */; };
 		A2DA8D231E6720C900E18AAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA8D211E6720C900E18AAA /* Main.storyboard */; };
 		A2DA8D251E6720C900E18AAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DA8D241E6720C900E18AAA /* Assets.xcassets */; };
 		A2DA8D281E6720C900E18AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA8D261E6720C900E18AAA /* LaunchScreen.storyboard */; };
+		A2DA8D301E6721B800E18AAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2DA8D2F1E6721B800E18AAA /* GoogleService-Info.plist */; };
+		A30DFC49ECB2E78DB1900305 /* Pods_toki_toki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC814FA3F3320A81BEF5850 /* Pods_toki_toki.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		92388116EF3016F1B786BD3F /* Pods-toki-toki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toki-toki.release.xcconfig"; path = "Pods/Target Support Files/Pods-toki-toki/Pods-toki-toki.release.xcconfig"; sourceTree = "<group>"; };
 		A2DA8D1A1E6720C900E18AAA /* toki-toki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "toki-toki.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DA8D1D1E6720C900E18AAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A2DA8D1F1E6720C900E18AAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2DA8D1F1E6720C900E18AAA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		A2DA8D221E6720C900E18AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2DA8D241E6720C900E18AAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2DA8D271E6720C900E18AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2DA8D291E6720C900E18AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2DA8D2F1E6721B800E18AAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C560C8A756A576F3BB4BDD33 /* Pods-toki-toki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toki-toki.debug.xcconfig"; path = "Pods/Target Support Files/Pods-toki-toki/Pods-toki-toki.debug.xcconfig"; sourceTree = "<group>"; };
+		EDC814FA3F3320A81BEF5850 /* Pods_toki_toki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_toki_toki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A30DFC49ECB2E78DB1900305 /* Pods_toki_toki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58B6063E5E94BCE49517B153 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDC814FA3F3320A81BEF5850 /* Pods_toki_toki.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A2DA8D111E6720C900E18AAA = {
 			isa = PBXGroup;
 			children = (
 				A2DA8D1C1E6720C900E18AAA /* toki-toki */,
 				A2DA8D1B1E6720C900E18AAA /* Products */,
+				FFBD2FFF8F1D0B063036C2FC /* Pods */,
+				58B6063E5E94BCE49517B153 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,48 @@
 		A2DA8D1C1E6720C900E18AAA /* toki-toki */ = {
 			isa = PBXGroup;
 			children = (
+				A2DA8D331E67248300E18AAA /* Controller */,
+				A2DA8D321E67247C00E18AAA /* View */,
+				A2DA8D311E67246E00E18AAA /* Model */,
 				A2DA8D1D1E6720C900E18AAA /* AppDelegate.swift */,
-				A2DA8D1F1E6720C900E18AAA /* ViewController.swift */,
-				A2DA8D211E6720C900E18AAA /* Main.storyboard */,
 				A2DA8D241E6720C900E18AAA /* Assets.xcassets */,
 				A2DA8D261E6720C900E18AAA /* LaunchScreen.storyboard */,
 				A2DA8D291E6720C900E18AAA /* Info.plist */,
+				A2DA8D2F1E6721B800E18AAA /* GoogleService-Info.plist */,
 			);
 			path = "toki-toki";
+			sourceTree = "<group>";
+		};
+		A2DA8D311E67246E00E18AAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A2DA8D321E67247C00E18AAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA8D211E6720C900E18AAA /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A2DA8D331E67248300E18AAA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA8D1F1E6720C900E18AAA /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FFBD2FFF8F1D0B063036C2FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C560C8A756A576F3BB4BDD33 /* Pods-toki-toki.debug.xcconfig */,
+				92388116EF3016F1B786BD3F /* Pods-toki-toki.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2DA8D2C1E6720C900E18AAA /* Build configuration list for PBXNativeTarget "toki-toki" */;
 			buildPhases = (
+				6F5ECB224BF43EB8FF71568B /* [CP] Check Pods Manifest.lock */,
 				A2DA8D161E6720C900E18AAA /* Sources */,
 				A2DA8D171E6720C900E18AAA /* Frameworks */,
 				A2DA8D181E6720C900E18AAA /* Resources */,
+				DD552C99C887438AFED3D24E /* [CP] Embed Pods Frameworks */,
+				0315177C5152FEAA9D517572 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2DA8D281E6720C900E18AAA /* LaunchScreen.storyboard in Resources */,
+				A2DA8D301E6721B800E18AAA /* GoogleService-Info.plist in Resources */,
 				A2DA8D251E6720C900E18AAA /* Assets.xcassets in Resources */,
 				A2DA8D231E6720C900E18AAA /* Main.storyboard in Resources */,
 			);
@@ -132,12 +187,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0315177C5152FEAA9D517572 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-toki-toki/Pods-toki-toki-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F5ECB224BF43EB8FF71568B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD552C99C887438AFED3D24E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-toki-toki/Pods-toki-toki-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A2DA8D161E6720C900E18AAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2DA8D201E6720C900E18AAA /* ViewController.swift in Sources */,
+				A2DA8D201E6720C900E18AAA /* MainVC.swift in Sources */,
 				A2DA8D1E1E6720C900E18AAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +362,7 @@
 		};
 		A2DA8D2D1E6720C900E18AAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C560C8A756A576F3BB4BDD33 /* Pods-toki-toki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4YULSBV58C;
@@ -272,6 +376,7 @@
 		};
 		A2DA8D2E1E6720C900E18AAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92388116EF3016F1B786BD3F /* Pods-toki-toki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4YULSBV58C;
@@ -302,6 +407,7 @@
 				A2DA8D2E1E6720C900E18AAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
