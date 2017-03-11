@@ -13,6 +13,11 @@ import Firebase
 
 class MainVC: UIViewController {
 
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var pwdField: UITextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -43,12 +48,29 @@ class MainVC: UIViewController {
     func firebaseAuth(_ credential: FIRAuthCredential) {
         FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
             if error != nil {
-                print ("Unable to login in firebase")
+                print ("Unable to login in firebase - \(error)")
             } else {
                 print("Firebase login")
             }
         })
     }
-
+    
+    @IBAction func signInBtnPressed(_ sender: Any) {
+        if let email = emailField.text, let pwd = pwdField.text {
+            FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
+                if error == nil {
+                    print ("Firebase login")
+                } else {
+                    FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
+                        if error != nil {
+                            print ("Unable to login in firebase")
+                        } else {
+                            print ("Firebase login")
+                        }
+                    })
+                }
+            })
+        }
+    }
 }
 
