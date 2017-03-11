@@ -71,6 +71,9 @@
                                 <rect key="frame" x="157" y="348" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="facebook"/>
+                                <connections>
+                                    <action selector="fbBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6MQ-gV-AgV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

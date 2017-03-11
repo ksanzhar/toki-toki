@@ -21,6 +21,7 @@ xcuserdata/
 *.ipa
 *.dSYM.zip
 *.dSYM
+*Info.plist
 timeline.xctimeline
 playground.xcworkspace
 .build/

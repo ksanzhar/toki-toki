@@ -18,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		92388116EF3016F1B786BD3F /* Pods-toki-toki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toki-toki.release.xcconfig"; path = "Pods/Target Support Files/Pods-toki-toki/Pods-toki-toki.release.xcconfig"; sourceTree = "<group>"; };
+		A2A84D761E6FF10E00321778 /* toki-toki.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "toki-toki.entitlements"; sourceTree = "<group>"; };
 		A2DA8D1A1E6720C900E18AAA /* toki-toki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "toki-toki.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DA8D1D1E6720C900E18AAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2DA8D1F1E6720C900E18AAA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		A2DA8D1C1E6720C900E18AAA /* toki-toki */ = {
 			isa = PBXGroup;
 			children = (
+				A2A84D761E6FF10E00321778 /* toki-toki.entitlements */,
 				A2DA8D331E67248300E18AAA /* Controller */,
 				A2DA8D321E67247C00E18AAA /* View */,
 				A2DA8D311E67246E00E18AAA /* Model */,
@@ -152,6 +154,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4YULSBV58C;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -365,6 +372,7 @@
 			baseConfigurationReference = C560C8A756A576F3BB4BDD33 /* Pods-toki-toki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "toki-toki/toki-toki.entitlements";
 				DEVELOPMENT_TEAM = 4YULSBV58C;
 				INFOPLIST_FILE = "toki-toki/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -379,6 +387,7 @@
 			baseConfigurationReference = 92388116EF3016F1B786BD3F /* Pods-toki-toki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "toki-toki/toki-toki.entitlements";
 				DEVELOPMENT_TEAM = 4YULSBV58C;
 				INFOPLIST_FILE = "toki-toki/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
